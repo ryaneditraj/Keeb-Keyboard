@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# KiCad backups, lock files, and local project state
+*-backups/
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pro-bak
+*.kicad_prl
+fp-info-cache
+~*.lck
+*.lck
+*-cache*
+*.tmp
+*.bak
+*.bck
+\#auto_saved_files\#
+
+# macOS resource forks. A previous Gerber zip contained these; do not add them back.
+.DS_Store
+__MACOSX/
+._*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors
+.idea/
+.vscode/
+*.swp
