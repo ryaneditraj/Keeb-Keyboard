@@ -1,0 +1,17 @@
+name: Feature
+description: Suggest a layout change, firmware, or documentation improvement
+title: "[feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should change?
+      description: For a board change, say whether the existing Gerbers would still be valid.
+    validations:
+      required: true

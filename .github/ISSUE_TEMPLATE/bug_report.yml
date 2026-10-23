@@ -1,0 +1,35 @@
+name: Design bug
+description: Something is wrong in the schematic, PCB, Gerbers, case, or docs
+title: "[bug] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is it?
+      options:
+        - Schematic
+        - PCB layout
+        - Gerbers or drills
+        - Case (STEP)
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Include switch designators, net names, or a screenshot from KiCad if you have one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: kicad
+    attributes:
+      label: KiCad version
+      placeholder: 10.0.4

@@ -1,0 +1,7 @@
+*.kicad_pcb text linguist-detectable
+*.kicad_sch text linguist-detectable
+*.step binary
+*.zip binary
+*.png binary
+*.drl binary
+*.gbr binary
